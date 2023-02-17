@@ -99,12 +99,10 @@
 		661E2F60299F1E3500A6A736 /* SearchBook */ = {
 			isa = PBXGroup;
 			children = (
-				661E2F61299F1E3500A6A736 /* AppDelegate.swift */,
-				661E2F63299F1E3500A6A736 /* SceneDelegate.swift */,
+				661E2F92299F26D500A6A736 /* Application */,
+				661E2F94299F274C00A6A736 /* Feature */,
+				661E2F91299F26B900A6A736 /* Common */,
 				661E2F65299F1E3500A6A736 /* ViewController.swift */,
-				661E2F67299F1E3500A6A736 /* Main.storyboard */,
-				661E2F6A299F1E3600A6A736 /* Assets.xcassets */,
-				661E2F6C299F1E3600A6A736 /* LaunchScreen.storyboard */,
 				661E2F6F299F1E3600A6A736 /* Info.plist */,
 			);
 			path = SearchBook;
@@ -125,6 +123,112 @@
 				661E2F84299F1E3700A6A736 /* SearchBookUITestsLaunchTests.swift */,
 			);
 			path = SearchBookUITests;
+			sourceTree = "<group>";
+		};
+		661E2F91299F26B900A6A736 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				661E2F98299F27E600A6A736 /* Resources */,
+				661E2F97299F27CA00A6A736 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		661E2F92299F26D500A6A736 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				661E2F61299F1E3500A6A736 /* AppDelegate.swift */,
+				661E2F63299F1E3500A6A736 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		661E2F94299F274C00A6A736 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				661E2F95299F277100A6A736 /* SearchBook */,
+				661E2F96299F277800A6A736 /* BookDetail */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		661E2F95299F277100A6A736 /* SearchBook */ = {
+			isa = PBXGroup;
+			children = (
+				661E2F9C299F296E00A6A736 /* Presentation */,
+				661E2F9E299F297D00A6A736 /* Platform */,
+				661E2F9D299F297400A6A736 /* Domain */,
+			);
+			path = SearchBook;
+			sourceTree = "<group>";
+		};
+		661E2F96299F277800A6A736 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				661E2F9B299F295500A6A736 /* Presentation */,
+				661E2F9A299F294E00A6A736 /* Platform */,
+				661E2F99299F294500A6A736 /* Domain */,
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		661E2F97299F27CA00A6A736 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		661E2F98299F27E600A6A736 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				661E2F67299F1E3500A6A736 /* Main.storyboard */,
+				661E2F6A299F1E3600A6A736 /* Assets.xcassets */,
+				661E2F6C299F1E3600A6A736 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		661E2F99299F294500A6A736 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		661E2F9A299F294E00A6A736 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		661E2F9B299F295500A6A736 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		661E2F9C299F296E00A6A736 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		661E2F9D299F297400A6A736 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		661E2F9E299F297D00A6A736 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
