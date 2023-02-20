@@ -19,9 +19,12 @@ final class MainCoordinator: Coordinator {
     // Main VC를 통해 진행.
     func start() {
         // usecase / repository 등 주입.
-        let SearchBookStoryboard = UIStoryboard(name: "SearchBook", bundle: nil)
-        let searchBookViewController = SearchBookStoryboard.instantiateViewController(withIdentifier: SearchBookViewController.reuseIdentifier)
-//         let vc = View
-        navigationController.pushViewController(searchBookViewController, animated: false)
+        let searchBookStoryboard = UIStoryboard(name: "SearchBook", bundle: nil)
+        let dataSource = SearchBookAPIDataSource()
+        let repositoy = SearchBookRepository(dataSource: dataSource)
+        let useCase = SearchBookUseCase(repository: repositoy)
+        let viewModel = SearchBookViewModel(useCase: useCase)
+        let viewController = searchBookStoryboard.instantiateViewController(type: SearchBookViewController.self, viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: false)
     }
 }

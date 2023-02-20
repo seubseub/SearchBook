@@ -2,31 +2,52 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Search Book View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SearchBookViewController" id="Y6W-OH-hqX" customClass="SearchBookViewController" customModule="SearchBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchBookViewController" automaticallyAdjustsScrollViewInsets="NO" id="Y6W-OH-hqX" customClass="SearchBookViewController" customModule="SearchBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="PZm-Sd-LUM" customClass="SearchBookSearchBar" customModule="SearchBook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="47" width="390" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gbH-3i-8k2">
+                                <rect key="frame" x="0.0" y="103" width="390" height="707"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="c9Y-Zv-gls"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="q21-DN-MJO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gbH-3i-8k2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="22o-E9-MSf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PZm-Sd-LUM" secondAttribute="trailing" id="G4n-bJ-0aD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gbH-3i-8k2" secondAttribute="bottom" id="Gpt-cz-sAl"/>
+                            <constraint firstItem="PZm-Sd-LUM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="QOr-l9-X8S"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gbH-3i-8k2" secondAttribute="trailing" id="VgA-DF-pcL"/>
+                            <constraint firstItem="PZm-Sd-LUM" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="qoa-He-CFn"/>
+                            <constraint firstItem="gbH-3i-8k2" firstAttribute="top" secondItem="PZm-Sd-LUM" secondAttribute="bottom" id="tWT-uf-TL2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="PZm-Sd-LUM" id="Dva-4X-kRv"/>
+                        <outlet property="tableView" destination="gbH-3i-8k2" id="lAq-2J-3mT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="-2"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
