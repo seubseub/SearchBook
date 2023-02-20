@@ -10,6 +10,7 @@ import UIKit
 extension UIStoryboard {
     func instantiateViewController<T: UIViewController & ViewModelInjectable>(type: T.Type, viewModel: T.VM) -> T {
         guard let viewController = instantiateViewController(withIdentifier: type.reuseIdentifier) as? T else {
+            assertionFailure()
             return T()
         }
         viewController.inject(viewModel: viewModel)

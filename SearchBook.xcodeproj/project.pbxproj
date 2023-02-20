@@ -24,6 +24,23 @@
 		661E2FB1299F666C00A6A736 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661E2FB0299F666C00A6A736 /* UIStoryboardExtensions.swift */; };
 		661E2FB4299F680400A6A736 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661E2FB3299F680400A6A736 /* Reusable.swift */; };
 		661E2FBA29A1C3E700A6A736 /* ViewModelInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661E2FB929A1C3E700A6A736 /* ViewModelInjectable.swift */; };
+		66F7DBC829A1C8A50018C92C /* SearchBookUserCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBC729A1C8A50018C92C /* SearchBookUserCaseInterface.swift */; };
+		66F7DBCA29A1C9FD0018C92C /* SearchBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBC929A1C9FD0018C92C /* SearchBookViewModel.swift */; };
+		66F7DBCC29A1CEB50018C92C /* SearchBookRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBCB29A1CEB50018C92C /* SearchBookRepositoryInterface.swift */; };
+		66F7DBCE29A1D19C0018C92C /* SearchBookDataSourceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBCD29A1D19C0018C92C /* SearchBookDataSourceInterface.swift */; };
+		66F7DBD029A1D4A80018C92C /* SearchBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBCF29A1D4A80018C92C /* SearchBookRepository.swift */; };
+		66F7DBD229A1D8CB0018C92C /* SearchBookAPIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBD129A1D8CB0018C92C /* SearchBookAPIDataSource.swift */; };
+		66F7DBD429A1DC3A0018C92C /* SearchBookUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBD329A1DC3A0018C92C /* SearchBookUseCase.swift */; };
+		66F7DBD629A203250018C92C /* SearchBookSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBD529A203250018C92C /* SearchBookSearchBar.swift */; };
+		66F7DBD829A20E990018C92C /* SearchBookResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBD729A20E990018C92C /* SearchBookResponseEntity.swift */; };
+		66F7DBDB29A231BA0018C92C /* SearchBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBD929A231BA0018C92C /* SearchBookCell.swift */; };
+		66F7DBDC29A231BA0018C92C /* SearchBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66F7DBDA29A231BA0018C92C /* SearchBookCell.xib */; };
+		66F7DBDF29A332C60018C92C /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBDD29A332C60018C92C /* LoadingCell.swift */; };
+		66F7DBE029A332C60018C92C /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66F7DBDE29A332C60018C92C /* LoadingCell.xib */; };
+		66F7DBE229A334400018C92C /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBE129A334400018C92C /* ArrayExtensions.swift */; };
+		66F7DBE429A34E150018C92C /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBE329A34E150018C92C /* ImageService.swift */; };
+		66F7DBE629A34E950018C92C /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBE529A34E950018C92C /* Cancellable.swift */; };
+		66F7DBE829A34EAC0018C92C /* URLSessionTaskExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DBE729A34EAC0018C92C /* URLSessionTaskExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +82,23 @@
 		661E2FB0299F666C00A6A736 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
 		661E2FB3299F680400A6A736 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		661E2FB929A1C3E700A6A736 /* ViewModelInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelInjectable.swift; sourceTree = "<group>"; };
+		66F7DBC729A1C8A50018C92C /* SearchBookUserCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookUserCaseInterface.swift; sourceTree = "<group>"; };
+		66F7DBC929A1C9FD0018C92C /* SearchBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewModel.swift; sourceTree = "<group>"; };
+		66F7DBCB29A1CEB50018C92C /* SearchBookRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookRepositoryInterface.swift; sourceTree = "<group>"; };
+		66F7DBCD29A1D19C0018C92C /* SearchBookDataSourceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookDataSourceInterface.swift; sourceTree = "<group>"; };
+		66F7DBCF29A1D4A80018C92C /* SearchBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookRepository.swift; sourceTree = "<group>"; };
+		66F7DBD129A1D8CB0018C92C /* SearchBookAPIDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookAPIDataSource.swift; sourceTree = "<group>"; };
+		66F7DBD329A1DC3A0018C92C /* SearchBookUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookUseCase.swift; sourceTree = "<group>"; };
+		66F7DBD529A203250018C92C /* SearchBookSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookSearchBar.swift; sourceTree = "<group>"; };
+		66F7DBD729A20E990018C92C /* SearchBookResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookResponseEntity.swift; sourceTree = "<group>"; };
+		66F7DBD929A231BA0018C92C /* SearchBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookCell.swift; sourceTree = "<group>"; };
+		66F7DBDA29A231BA0018C92C /* SearchBookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBookCell.xib; sourceTree = "<group>"; };
+		66F7DBDD29A332C60018C92C /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		66F7DBDE29A332C60018C92C /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		66F7DBE129A334400018C92C /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		66F7DBE329A34E150018C92C /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		66F7DBE529A34E950018C92C /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		66F7DBE729A34EAC0018C92C /* URLSessionTaskExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTaskExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				661E2FB0299F666C00A6A736 /* UIStoryboardExtensions.swift */,
+				66F7DBE129A334400018C92C /* ArrayExtensions.swift */,
+				66F7DBE729A34EAC0018C92C /* URLSessionTaskExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,7 +268,13 @@
 			isa = PBXGroup;
 			children = (
 				661E2FAE299F633300A6A736 /* SearchBookViewController.swift */,
+				66F7DBD529A203250018C92C /* SearchBookSearchBar.swift */,
+				66F7DBC929A1C9FD0018C92C /* SearchBookViewModel.swift */,
 				661E2FAA299F631000A6A736 /* SearchBook.storyboard */,
+				66F7DBD929A231BA0018C92C /* SearchBookCell.swift */,
+				66F7DBDA29A231BA0018C92C /* SearchBookCell.xib */,
+				66F7DBDD29A332C60018C92C /* LoadingCell.swift */,
+				66F7DBDE29A332C60018C92C /* LoadingCell.xib */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -240,6 +282,9 @@
 		661E2F9D299F297400A6A736 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				66F7DBC729A1C8A50018C92C /* SearchBookUserCaseInterface.swift */,
+				66F7DBCB29A1CEB50018C92C /* SearchBookRepositoryInterface.swift */,
+				66F7DBCD29A1D19C0018C92C /* SearchBookDataSourceInterface.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -247,6 +292,10 @@
 		661E2F9E299F297D00A6A736 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
+				66F7DBD329A1DC3A0018C92C /* SearchBookUseCase.swift */,
+				66F7DBCF29A1D4A80018C92C /* SearchBookRepository.swift */,
+				66F7DBD129A1D8CB0018C92C /* SearchBookAPIDataSource.swift */,
+				66F7DBD729A20E990018C92C /* SearchBookResponseEntity.swift */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -267,6 +316,8 @@
 			isa = PBXGroup;
 			children = (
 				661E2FB3299F680400A6A736 /* Reusable.swift */,
+				66F7DBE329A34E150018C92C /* ImageService.swift */,
+				66F7DBE529A34E950018C92C /* Cancellable.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -375,8 +426,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F7DBDC29A231BA0018C92C /* SearchBookCell.xib in Resources */,
 				661E2F6E299F1E3600A6A736 /* LaunchScreen.storyboard in Resources */,
 				661E2FAB299F631000A6A736 /* SearchBook.storyboard in Resources */,
+				66F7DBE029A332C60018C92C /* LoadingCell.xib in Resources */,
 				661E2F6B299F1E3600A6A736 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,15 +456,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				661E2FA3299F5EF100A6A736 /* ViewModel.swift in Sources */,
+				66F7DBD829A20E990018C92C /* SearchBookResponseEntity.swift in Sources */,
 				661E2FB4299F680400A6A736 /* Reusable.swift in Sources */,
+				66F7DBCC29A1CEB50018C92C /* SearchBookRepositoryInterface.swift in Sources */,
+				66F7DBE229A334400018C92C /* ArrayExtensions.swift in Sources */,
+				66F7DBE829A34EAC0018C92C /* URLSessionTaskExtensions.swift in Sources */,
 				661E2FA9299F5F7400A6A736 /* MainCoordinator.swift in Sources */,
 				661E2FAF299F633300A6A736 /* SearchBookViewController.swift in Sources */,
 				661E2FBA29A1C3E700A6A736 /* ViewModelInjectable.swift in Sources */,
+				66F7DBD029A1D4A80018C92C /* SearchBookRepository.swift in Sources */,
 				661E2FA1299F5ED800A6A736 /* UseCase.swift in Sources */,
+				66F7DBCA29A1C9FD0018C92C /* SearchBookViewModel.swift in Sources */,
+				66F7DBD229A1D8CB0018C92C /* SearchBookAPIDataSource.swift in Sources */,
 				661E2F62299F1E3500A6A736 /* AppDelegate.swift in Sources */,
+				66F7DBC829A1C8A50018C92C /* SearchBookUserCaseInterface.swift in Sources */,
 				661E2F64299F1E3500A6A736 /* SceneDelegate.swift in Sources */,
+				66F7DBE629A34E950018C92C /* Cancellable.swift in Sources */,
+				66F7DBDF29A332C60018C92C /* LoadingCell.swift in Sources */,
 				661E2FA5299F5F1A00A6A736 /* Repository.swift in Sources */,
+				66F7DBE429A34E150018C92C /* ImageService.swift in Sources */,
 				661E2FB1299F666C00A6A736 /* UIStoryboardExtensions.swift in Sources */,
+				66F7DBD629A203250018C92C /* SearchBookSearchBar.swift in Sources */,
+				66F7DBCE29A1D19C0018C92C /* SearchBookDataSourceInterface.swift in Sources */,
+				66F7DBDB29A231BA0018C92C /* SearchBookCell.swift in Sources */,
+				66F7DBD429A1DC3A0018C92C /* SearchBookUseCase.swift in Sources */,
 				661E2FA7299F5F2C00A6A736 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -564,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -589,6 +657,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = SearchBook;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,6 +686,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = SearchBook;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,7 +709,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LVRKUWY6HJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.minseob.SearchBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,7 +729,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LVRKUWY6HJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.minseob.SearchBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -678,6 +748,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LVRKUWY6HJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.minseob.SearchBookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,6 +767,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LVRKUWY6HJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.minseob.SearchBookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
