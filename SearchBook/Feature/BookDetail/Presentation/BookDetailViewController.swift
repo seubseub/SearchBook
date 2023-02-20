@@ -33,14 +33,7 @@ extension BookDetailViewController {
         output?.page
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
-            switch completion {
-            case .failure(let error):
-                print(error)
-            case .finished:
-                print("finished")
-            }
         }, receiveValue: { [weak self] _ in
-            print("Dfnkldsaflksd")
         }).store(in: &cancellables)
     }
 }

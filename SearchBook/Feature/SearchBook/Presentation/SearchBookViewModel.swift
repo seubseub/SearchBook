@@ -41,7 +41,6 @@ final class SearchBookViewModel: ViewModel {
     func transform(input: Input) -> Output {
         let pageOutput = PassthroughSubject<(), Error>()
         input.didTapSearchButton.sink { completion in
-            print("eee")
         } receiveValue: { [weak self] input in
             guard let self = self else { return }
             self.isPaging = true

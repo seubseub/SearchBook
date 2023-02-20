@@ -58,13 +58,7 @@ extension SearchBookViewController {
         let output = viewModel?.transform(input: input)
         output?.page
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-            switch completion {
-            case .failure(let error):
-                print(error)
-            case .finished:
-                print("finished")
-            }
+            .sink(receiveCompletion: { completion in            
         }, receiveValue: { [weak self] _ in
             UIView.setAnimationsEnabled(false)
             self?.tableView.beginUpdates()

@@ -30,9 +30,8 @@ final class BookDetailViewModel: ViewModel {
         input.willApperSubject.sink { completion in
         } receiveValue: { [weak self] id in
             guard let self = self else { return }
-            self.useCase.fetchBookDetail().sink(receiveCompletion: { [weak self] completion in
+            self.useCase.fetchBookDetail().sink(receiveCompletion: { completion in
             }, receiveValue: { bookDetail in
-                print(bookDetail)
                 pageOutput.send(())
             }).store(in: &self.cancellables)
         }.store(in: &cancellables)
