@@ -40,7 +40,6 @@ final class SearchBookRepository: SearchBookRepositoryInterface {
                 .eraseToAnyPublisher()
         }
         self.pageNum += 1
-        print("[TEST] self.pageNum\(self.pageNum)")
         return dataSource.fetchSearchBookList(from: keyword, page: pageNum)
             .tryMap { [weak self] bookModel in
                 guard let self = self else { return [] }

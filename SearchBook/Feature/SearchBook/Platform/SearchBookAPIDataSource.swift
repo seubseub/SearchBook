@@ -37,7 +37,6 @@ final class SearchBookAPIDataSource: SearchBookDataSourceInterface {
             }
             .decode(type: SearchBookResponseEntityDTO.self, decoder: JSONDecoder())
             .tryMap { item in
-                print("[TEST] item \(item)")
                 return item.dto()
             }
             .eraseToAnyPublisher()
