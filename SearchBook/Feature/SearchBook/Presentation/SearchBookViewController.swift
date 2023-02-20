@@ -9,11 +9,13 @@ import Combine
 import UIKit
 
 final class SearchBookViewController: UIViewController, ViewModelInjectable {
+
     @IBOutlet private weak var searchBar: SearchBookSearchBar!
     @IBOutlet private weak var tableView: UITableView!
 
     private let tapSearchButtonSubject = PassthroughSubject<String, Never>()
     private let tapClearButtonSubject = PassthroughSubject<Void, Never>()
+    private let tapItemSubject = PassthroughSubject<String, Never>()
     private let nextPageSubject = PassthroughSubject<Void, Never>()
     private var cancellables = Set<AnyCancellable>()
 
@@ -76,7 +78,12 @@ extension SearchBookViewController {
 
 extension SearchBookViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let id = viewModel?.books[safe: indexPath.row]?.isbn13,
+        let navigationController = self.navigationController else {
+            return
+        }
+        let coord = SearchBookCoordinator(navigationController: navigationController)
+        coord.showBookDetail(id: id)
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

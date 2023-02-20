@@ -22,7 +22,7 @@ final class SearchBookCell: UITableViewCell, ViewModelUpdatable {
     @IBOutlet private weak var bookCoverImageView: UIImageView!
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
 
-    private lazy var imageService = ImageService()
+    private var imageService = ImageService()
 
     private var imageRequest: Cancellable?
 
